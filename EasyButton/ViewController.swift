@@ -19,7 +19,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func easyButtonTapped(_ sender: Any) {
-        print("That was easy!")
+        print("That was easy")
+        UIView.animate(withDuration: 0.05,
+        animations: {
+            self.easyButton.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        },
+        completion: { _ in
+            UIView.animate(withDuration: 0.05) {
+                self.easyButton.transform = CGAffineTransform.identity
+            }
+        })
     }
     
 }
