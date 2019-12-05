@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2BE74F23994F3E00E541F8 /* that_was_easy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D2BE74E23994F3E00E541F8 /* that_was_easy.mp3 */; };
 		1D4C6DA5236656220023BB18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C6DA4236656220023BB18 /* AppDelegate.swift */; };
 		1D4C6DA7236656220023BB18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C6DA6236656220023BB18 /* SceneDelegate.swift */; };
 		1D4C6DA9236656220023BB18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C6DA8236656220023BB18 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D2BE74E23994F3E00E541F8 /* that_was_easy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = that_was_easy.mp3; sourceTree = "<group>"; };
 		1D4C6DA1236656220023BB18 /* EasyButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4C6DA4236656220023BB18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D4C6DA6236656220023BB18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D2BE74D23994F2300E541F8 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				1D2BE74E23994F3E00E541F8 /* that_was_easy.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		1D4C6D98236656210023BB18 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		1D4C6DA3236656220023BB18 /* EasyButton */ = {
 			isa = PBXGroup;
 			children = (
+				1D2BE74D23994F2300E541F8 /* Audio */,
 				1D4C6DA4236656220023BB18 /* AppDelegate.swift */,
 				1D4C6DA6236656220023BB18 /* SceneDelegate.swift */,
 				1D4C6DA8236656220023BB18 /* ViewController.swift */,
@@ -128,6 +139,7 @@
 				1D4C6DB1236656230023BB18 /* LaunchScreen.storyboard in Resources */,
 				1D4C6DAE236656230023BB18 /* Assets.xcassets in Resources */,
 				1D4C6DAC236656220023BB18 /* Main.storyboard in Resources */,
+				1D2BE74F23994F3E00E541F8 /* that_was_easy.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

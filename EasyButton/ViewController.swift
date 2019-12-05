@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var appTitle: UILabel!
     @IBOutlet weak var easyButton: UIButton!
+    
+    var audioPlayer : AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +22,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func easyButtonTapped(_ sender: Any) {
-        print("That was easy")
         UIView.animate(withDuration: 0.05,
         animations: {
             self.easyButton.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
@@ -29,6 +31,20 @@ class ViewController: UIViewController {
                 self.easyButton.transform = CGAffineTransform.identity
             }
         })
+        
+        playSound()
+    }
+    
+    private func playSound() {
+        guard let pathToAudio = Bundle.main.path(forResource: "that_was_easy", ofType: "mp3") else { return }
+        let url = URL(fileURLWithPath: pathToAudio)
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            print("Could not play audio")
+        }
     }
     
 }
