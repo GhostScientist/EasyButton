@@ -9,10 +9,28 @@
 import UIKit
 
 class EasyButtonViewController: UIViewController {
+    
+    let easyButton = UIButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
-        // Do any additional setup after loading the view.
+        setupEasyButton()
+    }
+    
+    private func setupEasyButton() {
+        easyButton.setBackgroundImage(#imageLiteral(resourceName: "easy_button"), for: .normal)
+        easyButton.imageView?.contentMode = .scaleAspectFit
+        
+        view.addSubview(easyButton)
+        setupEasyButtonConstraints()
+    }
+    
+    private func setupEasyButtonConstraints() {
+        easyButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        easyButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
+        easyButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
+        easyButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
 }
