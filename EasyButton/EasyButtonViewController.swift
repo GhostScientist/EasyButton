@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class EasyButtonViewController: UIViewController {
     
@@ -32,5 +33,9 @@ class EasyButtonViewController: UIViewController {
         easyButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
         easyButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50).isActive = true
         easyButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
+    
+    @objc private func buttonTapped() {
+        
     }
 }
