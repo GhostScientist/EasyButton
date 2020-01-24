@@ -11,6 +11,8 @@ import AVFoundation
 
 class EasyButtonViewController: UIViewController {
     
+    var audioPlayer : AVAudioPlayer?
+    
     let easyButton = UIButton()
 
     override func viewDidLoad() {
@@ -22,7 +24,7 @@ class EasyButtonViewController: UIViewController {
     private func setupEasyButton() {
         easyButton.setBackgroundImage(#imageLiteral(resourceName: "easy_button"), for: .normal)
         easyButton.imageView?.contentMode = .scaleAspectFit
-        
+        easyButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         view.addSubview(easyButton)
         setupEasyButtonConstraints()
     }
@@ -36,6 +38,28 @@ class EasyButtonViewController: UIViewController {
     }
     
     @objc private func buttonTapped() {
+        UIView.animate(withDuration: 0.05,
+        animations: {
+            self.easyButton.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        },
+        completion: { _ in
+            UIView.animate(withDuration: 0.05) {
+                self.easyButton.transform = CGAffineTransform.identity
+            }
+        })
         
+        playSound()
+    }
+    
+    private func playSound() {
+        guard let pathToAudio = Bundle.main.path(forResource: "that_was_easy", ofType: "mp3") else { return }
+        let url = URL(fileURLWithPath: pathToAudio)
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            print("Could not play audio")
+        }
     }
 }

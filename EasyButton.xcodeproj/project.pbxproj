@@ -12,7 +12,7 @@
 		1D4C6DAE236656230023BB18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4C6DAD236656230023BB18 /* Assets.xcassets */; };
 		1D4C6DB1236656230023BB18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4C6DAF236656230023BB18 /* LaunchScreen.storyboard */; };
 		1DA772AA23DB3CF600C59CA2 /* EasyButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA772A923DB3CF600C59CA2 /* EasyButtonViewController.swift */; };
-		1DA772AC23DB442200C59CA2 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 1DA772AB23DB442200C59CA2 /* Audio */; };
+		1DA772AE23DB469000C59CA2 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 1DA772AB23DB442200C59CA2 /* Audio */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,7 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DA772AC23DB442200C59CA2 /* Audio in Resources */,
+				1DA772AE23DB469000C59CA2 /* Audio in Resources */,
 				1D4C6DB1236656230023BB18 /* LaunchScreen.storyboard in Resources */,
 				1D4C6DAE236656230023BB18 /* Assets.xcassets in Resources */,
 			);
