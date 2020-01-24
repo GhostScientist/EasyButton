@@ -11,6 +11,7 @@
 		1D4C6DA7236656220023BB18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C6DA6236656220023BB18 /* SceneDelegate.swift */; };
 		1D4C6DAE236656230023BB18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4C6DAD236656230023BB18 /* Assets.xcassets */; };
 		1D4C6DB1236656230023BB18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4C6DAF236656230023BB18 /* LaunchScreen.storyboard */; };
+		1DA772AA23DB3CF600C59CA2 /* EasyButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA772A923DB3CF600C59CA2 /* EasyButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		1D4C6DAD236656230023BB18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D4C6DB0236656230023BB18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D4C6DB2236656230023BB18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA772A923DB3CF600C59CA2 /* EasyButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				1D4C6DAD236656230023BB18 /* Assets.xcassets */,
 				1D4C6DAF236656230023BB18 /* LaunchScreen.storyboard */,
 				1D4C6DB2236656230023BB18 /* Info.plist */,
+				1DA772A923DB3CF600C59CA2 /* EasyButtonViewController.swift */,
 			);
 			path = EasyButton;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			files = (
 				1D4C6DA5236656220023BB18 /* AppDelegate.swift in Sources */,
 				1D4C6DA7236656220023BB18 /* SceneDelegate.swift in Sources */,
+				1DA772AA23DB3CF600C59CA2 /* EasyButtonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
